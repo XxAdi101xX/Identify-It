@@ -23,5 +23,5 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://xxadi101xx.github.io/Identify-It/"
+  "homepage": "https://xxadi101xx.github.io/Identify-It"
 }

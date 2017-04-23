@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router'
+import { Router, Route, IndexRoute, browserHistory, hashHistory } from 'react-router'
 import App from './components/App'
 import Home from './components/Home';
 import LevelSelector from './components/LevelSelector';
@@ -18,7 +18,7 @@ import { createHistory, useBeforeUnload } from 'history'
 })*/
 
 ReactDOM.render(
-  <Router history={browserHistory}>
+  <Router history={hashHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home} />  
       <Route path="/levelselector" component={LevelSelector} />

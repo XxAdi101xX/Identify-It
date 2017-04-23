@@ -18,7 +18,7 @@ import { createHistory, useBeforeUnload } from 'history'
 })*/
 
 ReactDOM.render(
-  <Router history={browserHistory}>
+  <Router history={hashHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home} />  
       <Route path="/levelselector" component={LevelSelector} />
